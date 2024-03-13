@@ -1,4 +1,29 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --color-whitePink: #fff1f7;
+  --color-lightPink: #f1b2ce;
+  --color-palepink: #ffc2e6;
+  --color-hotPink: #ff8dcb;
+
+  --color-black: #000028;
+  --color-lightBlack: #353430;
+  --color-bluishBlack: #35343040;
+
+  --color-lightPurple: #ff0070;
+  --color-darkPurple: #ff007040;
+  --color-brightPurple: #db00ff;
+
+  --additional-color-dark: var(--color-darkPurple, #ff007040);
+  --brand-color: var(--color-brightPurple, #db00ff);
+  --bright-color: var(--color-black, #000028);
+  --main-color: var(--color-lightPink, #f1b2ce);
+  --accent-color: var(--color-lightPurple, #ff0070);
+  --additional-color: var(--color-lightPurple, #ff0070);
+
+
+  --page-background-image: url("../images/cover-image.png");
+  --page-background-color: var(--color-black, #000028);
+  --page-font-family: "IBM Plex mono", monospace;
+
+
+  --rec-decoration-visibility: visible;
+}

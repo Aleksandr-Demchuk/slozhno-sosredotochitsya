@@ -1,12 +1,29 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-color: var(--color-lightPink, #f1b2ce);
+  --brand-color: var(--color-brightPurple, #db00ff);
+  --additional-color: var(--color-lightPurple, #ff0070);
+  --additional-color-dark: var(--color-darkPurple, #ff007040);
+  --accent-color: var(--color-lightPurple, #ff0070);
+  --bright-color: var(--color-Black, #000028);
+
+  --page-background-color: var(--color-Black, #000028);
+  --page-background-image: url("../images/cover-image-dark.png");
+
+  --rec-decoration-visibility: visible;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-color: var(--color-lightPink, #f1b2ce);
+    --brand-color: var(--color-brightPurple, #db00ff);
+    --additional-color: var(--color-lightPurple, #ff0070);
+    --additional-color-dark: var(--color-darkPurple, #ff007040);
+    --accent-color: var(--color-lightPurple, #ff0070);
+    --bright-color: var(--color-black, #000028);
+
+    --page-background-color: var(--color-black, #000028);
+    --page-background-image: url("../images/cover-image-dark.png");
+
+    --rec-decoration-visibility: visible;
+  }
 }
